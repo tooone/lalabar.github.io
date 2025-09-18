@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>神秘之夜酒吧</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0d0d0d;
+            color: #f0f0f0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 1.5rem;
+        }
+        .bg-pattern {
+            background-image: url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%231a1a1a" fill-opacity="0.4"%3E%3Cpath d="M36 34.646L33.725 32.372l-2.274 2.274L30 35.5l1.06-1.06 2.274-2.274L36 30l1.06 1.06-2.274 2.274 2.274 2.274L36 34.646zm-6 2.828l-2.274 2.274 2.274 2.274L30 42.172l-1.06-1.06-2.274 2.274 2.274 2.274L30 45.414l1.06-1.06 2.274 2.274-2.274 2.274L30 50.93l-1.06-1.06-2.274 2.274 2.274 2.274L30 54.172l1.06-1.06 2.274 2.274-2.274 2.274L30 59.69l-1.06-1.06-2.274 2.274 2.274 2.274L30 62.93zM24 34.646L21.725 32.372l-2.274 2.274L18 35.5l1.06-1.06 2.274-2.274L24 30l1.06 1.06-2.274 2.274 2.274 2.274L24 34.646zm-6 2.828l-2.274 2.274 2.274 2.274L18 42.172l-1.06-1.06-2.274 2.274 2.274 2.274L18 45.414l1.06-1.06 2.274 2.274-2.274 2.274L18 50.93l-1.06-1.06-2.274 2.274 2.274 2.274L18 54.172l1.06-1.06 2.274 2.274-2.274 2.274L18 59.69l-1.06-1.06-2.274 2.274 2.274 2.274L18 62.93z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
+        }
+    </style>
+</head>
+<body class="bg-black text-white">
+
+    <!-- 导航栏 -->
+    <header class="p-6">
+        <nav class="container flex justify-between items-center">
+            <h1 class="text-3xl font-bold tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">神秘之夜</h1>
+            <ul class="hidden md:flex space-x-8 text-lg">
+                <li><a href="#about" class="hover:text-purple-400 transition-colors">关于我们</a></li>
+                <li><a href="#events" class="hover:text-purple-400 transition-colors">活动</a></li>
+                <li><a href="#gallery" class="hover:text-purple-400 transition-colors">画廊</a></li>
+                <li><a href="#location" class="hover:text-purple-400 transition-colors">位置</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 主视觉区 -->
+    <main class="relative">
+        <div class="container h-[60vh] md:h-[80vh] flex flex-col justify-center items-center text-center relative z-10">
+            <h2 class="text-5xl md:text-7xl font-bold mb-4 animate-fadeIn">探索你的夜晚</h2>
+            <p class="text-lg md:text-2xl text-gray-300 max-w-2xl animate-slideIn">我们不仅仅是酒吧，我们是你的夜晚归宿。在这里，音乐、美酒与故事交织。</p>
+            <a href="#location" class="mt-8 px-8 py-3 bg-gradient-to-r from-purple-600 to-pink-500 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all transform hover:scale-105">找到我们</a>
+        </div>
+        <!-- 氛围光效果 -->
+        <div class="absolute inset-0 z-0">
+            <div class="absolute top-1/2 left-1/2 w-64 h-64 bg-purple-600 rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-blob"></div>
+            <div class="absolute top-1/3 right-1/4 w-48 h-48 bg-pink-500 rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-blob animation-delay-2000"></div>
+            <div class="absolute bottom-1/4 left-1/4 w-56 h-56 bg-indigo-500 rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-blob animation-delay-4000"></div>
+        </div>
+    </main>
+
+    <!-- 关于我们 -->
+    <section id="about" class="py-20 bg-pattern">
+        <div class="container text-center">
+            <h3 class="text-4xl font-bold mb-8">关于我们</h3>
+            <p class="text-lg max-w-4xl mx-auto text-gray-300">
+                “神秘之夜”不仅仅是一个酒吧，它是一个逃离日常喧嚣的港湾。我们精心打造了独特的鸡尾酒单，每一款都融入了调酒师的匠心独运。在这里，你可以聆听灵魂爵士，感受动感电音，或是在静谧的角落与朋友畅聊。我们相信，最好的夜晚，是与美酒、音乐和对的人一起度过的。
+            </p>
+        </div>
+    </section>
+
+    <!-- 活动视频 -->
+    <section id="events" class="py-20">
+        <div class="container">
+            <h3 class="text-4xl font-bold mb-8 text-center">精彩活动回顾</h3>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- 视频容器 -->
+                <div class="rounded-xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform">
+                    <video class="w-full h-full object-cover" controls>
+                        <!-- 替换为你自己的视频URL -->
+                        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                        你的浏览器不支持视频播放。
+                    </video>
+                </div>
+                <div class="flex flex-col justify-center">
+                    <h4 class="text-3xl font-bold mb-4">感受音乐的律动</h4>
+                    <p class="text-lg text-gray-300">
+                        每周五、周六，我们都会邀请本地知名DJ或乐队前来表演。从爵士乐的慵懒到电子乐的狂热，我们为你带来无与伦比的听觉盛宴。不要错过我们的主题派对之夜！
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 画廊 -->
+    <section id="gallery" class="py-20 bg-pattern">
+        <div class="container">
+            <h3 class="text-4xl font-bold mb-8 text-center">画廊</h3>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <!-- 替换为你自己的图片URL -->
+                <img src="https://placehold.co/600x400/1a1a1a/fff?text=图片1" alt="酒吧内部图片1" class="rounded-lg shadow-xl w-full h-full object-cover transform hover:scale-105 transition-transform">
+                <img src="https://placehold.co/600x400/1a1a1a/fff?text=图片2" alt="酒吧内部图片2" class="rounded-lg shadow-xl w-full h-full object-cover transform hover:scale-105 transition-transform">
+                <img src="https://placehold.co/600x400/1a1a1a/fff?text=图片3" alt="酒吧内部图片3" class="rounded-lg shadow-xl w-full h-full object-cover transform hover:scale-105 transition-transform">
+                <img src="https://placehold.co/600x400/1a1a1a/fff?text=图片4" alt="酒吧内部图片4" class="rounded-lg shadow-xl w-full h-full object-cover transform hover:scale-105 transition-transform">
+                <img src="https://placehold.co/600x400/1a1a1a/fff?text=图片5" alt="酒吧内部图片5" class="rounded-lg shadow-xl w-full h-full object-cover transform hover:scale-105 transition-transform">
+                <img src="https://placehold.co/600x400/1a1a1a/fff?text=图片6" alt="酒吧内部图片6" class="rounded-lg shadow-xl w-full h-full object-cover transform hover:scale-105 transition-transform">
+                <img src="https://placehold.co/600x400/1a1a1a/fff?text=图片7" alt="酒吧内部图片7" class="rounded-lg shadow-xl w-full h-full object-cover transform hover:scale-105 transition-transform">
+                <img src="https://placehold.co/600x400/1a1a1a/fff?text=图片8" alt="酒吧内部图片8" class="rounded-lg shadow-xl w-full h-full object-cover transform hover:scale-105 transition-transform">
+            </div>
+        </div>
+    </section>
+
+    <!-- 位置 -->
+    <section id="location" class="py-20">
+        <div class="container">
+            <h3 class="text-4xl font-bold mb-8 text-center">找到我们</h3>
+            <div class="rounded-xl overflow-hidden shadow-2xl">
+                <!-- 替换为你的谷歌地图嵌入代码 -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835154011867!2d144.9537353153164!3d-37.81627917975171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f111893%3A0x1d46f5628b0c619!2sFederation%20Square!5e0!3m2!1sen!2sau!4v1612456789012!5m2!1sen!2sau" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="text-center mt-8">
+                <p class="text-xl font-bold">地址:</p>
+                <p class="text-lg text-gray-300">北京市朝阳区三里屯路XX号</p>
+                <p class="text-lg text-gray-300">营业时间：周一至周日 18:00 - 02:00</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="py-6 text-center text-gray-400">
+        <div class="container">
+            <p>&copy; 2024 神秘之夜酒吧. 保留所有权利。</p>
+        </div>
+    </footer>
+
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes blob {
+            0% { transform: scale(1) translate(0px, 0px); }
+            33% { transform: scale(1.1) translate(30px, -50px); }
+            66% { transform: scale(0.9) translate(-20px, 20px); }
+            100% { transform: scale(1) translate(0px, 0px); }
+        }
+        .animate-fadeIn { animation: fadeIn 1s ease-out forwards; }
+        .animate-slideIn { animation: slideIn 1s ease-out forwards 0.5s; }
+        .animate-blob { animation: blob 7s infinite cubic-bezier(0.42, 0, 0.58, 1); }
+    </style>
+
+</body>
+</html>
+
